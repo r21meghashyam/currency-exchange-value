@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Currency History vs USD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">USD exchange-rate history</p>
+          <h1>Compare currency depreciation against the US Dollar</h1>
+          <p class="subtitle">
+            Static, offline-friendly historical snapshots from the earliest
+            sourced year available. Values represent how many units of each
+            currency equal 1 USD.
+          </p>
+        </div>
+        <div class="hero-card">
+          <span>Example quote</span>
+          <strong id="headlineQuote">1 USD = 83.28 INR</strong>
+        </div>
+      </header>
+
+      <section class="panel controls-panel" aria-label="Chart controls">
+        <div class="control-group wide">
+          <label for="currencySearch">Currency Search</label>
+          <input id="currencySearch" type="search" placeholder="Search INR, Yen, Euro..." />
+        </div>
+
+        <div class="control-group wide">
+          <label for="currencySelect">Currencies</label>
+          <select id="currencySelect" multiple size="8" aria-describedby="currencyHint"></select>
+          <small id="currencyHint">Hold Cmd/Ctrl or tap multiple rows to compare currencies.</small>
+        </div>
+
+        <div class="control-group">
+          <label for="startYear">Start Year</label>
+          <select id="startYear"></select>
+        </div>
+
+        <div class="control-group">
+          <label for="endYear">End Year</label>
+          <select id="endYear"></select>
+        </div>
+
+        <div class="control-group mode-control">
+          <span class="label">Mode</span>
+          <div class="button-row" role="group" aria-label="Chart mode">
+            <button class="mode-button active" type="button" data-mode="raw">Raw Exchange Rate</button>
+            <button class="mode-button" type="button" data-mode="normalized">Normalized</button>
+            <button class="mode-button" type="button" data-mode="log">Log Scale</button>
+          </div>
+        </div>
+
+        <div class="control-group preset-control">
+          <span class="label">Presets</span>
+          <div class="button-row compact" role="group" aria-label="Currency presets">
+            <button class="preset-button" type="button" data-preset="southAsia">South Asia</button>
+            <button class="preset-button" type="button" data-preset="developed">Developed Economies</button>
+            <button class="preset-button" type="button" data-preset="highInflation">High Inflation</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel chart-panel">
+        <div class="section-heading">
+          <div>
+            <h2>Historical Trend</h2>
+            <p id="modeDescription">Raw exchange rates: 1 USD = X units of selected currency.</p>
+          </div>
+          <button id="exportPng" class="secondary-button" type="button">Export PNG</button>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="currencyChart"></canvas>
+        </div>
+        <p class="source-note">
+          Annual historical values use World Bank indicator PA.NUS.FCRF
+          (official exchange rate, LCU per US$, period average). The latest
+          2026-06-06 point is a current USD snapshot from ExchangeRate-API's
+          open endpoint, so it may not be directly comparable to annual averages.
+        </p>
+      </section>
+
+      <section class="grid-sections">
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <h2>Insights</h2>
+              <p>Generated from selected range and visible currencies.</p>
+            </div>
+          </div>
+          <ul id="insightsList" class="insights-list"></ul>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <h2>Raw Data</h2>
+              <p>Historical values used by the chart.</p>
+            </div>
+            <button id="exportCsv" class="secondary-button" type="button">Export CSV</button>
+          </div>
+          <div class="table-wrap">
+            <table id="dataTable"></table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="lib/chart.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

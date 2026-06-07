@@ -1,0 +1,20 @@
+{
+  "source": "ExchangeRate-API open endpoint",
+  "url": "https://open.er-api.com/v6/latest/USD",
+  "date": "2026-06-06",
+  "base": "USD",
+  "USD": 1,
+  "EUR": 0.865342,
+  "GBP": 0.747557,
+  "INR": 95.223148,
+  "PKR": 278.55863,
+  "BDT": 122.729962,
+  "LKR": 335.283692,
+  "IDR": 18088.662577,
+  "JPY": 160.163002,
+  "CNY": 6.792761,
+  "CAD": 1.391851,
+  "AUD": 1.414533,
+  "RUB": 73.458882,
+  "TRY": 46.088258
+}

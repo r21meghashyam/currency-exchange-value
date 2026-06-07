@@ -1,0 +1,170 @@
+{
+  "USD": {
+    "sourceCountry": "USA",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 1
+    },
+    "last": {
+      "year": 2024,
+      "rate": 1
+    }
+  },
+  "EUR": {
+    "sourceCountry": "EMU",
+    "count": 26,
+    "first": {
+      "year": 1999,
+      "rate": 0.938283072395283
+    },
+    "last": {
+      "year": 2024,
+      "rate": 0.923889546117606
+    }
+  },
+  "GBP": {
+    "sourceCountry": "GBR",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 0.357142999357143
+    },
+    "last": {
+      "year": 2024,
+      "rate": 0.782414580986262
+    }
+  },
+  "INR": {
+    "sourceCountry": "IND",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 4.7619000037619
+    },
+    "last": {
+      "year": 2024,
+      "rate": 83.669281580941
+    }
+  },
+  "PKR": {
+    "sourceCountry": "PAK",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 4.7619000037619
+    },
+    "last": {
+      "year": 2024,
+      "rate": 278.580716167563
+    }
+  },
+  "BDT": {
+    "sourceCountry": "BGD",
+    "count": 54,
+    "first": {
+      "year": 1971,
+      "rate": 7.86884258502912
+    },
+    "last": {
+      "year": 2024,
+      "rate": 115.603653796648
+    }
+  },
+  "LKR": {
+    "sourceCountry": "LKA",
+    "count": 64,
+    "first": {
+      "year": 1960,
+      "rate": 4.7619000037619
+    },
+    "last": {
+      "year": 2023,
+      "rate": 327.506533333333
+    }
+  },
+  "IDR": {
+    "sourceCountry": "IDN",
+    "count": 58,
+    "first": {
+      "year": 1967,
+      "rate": 149.583333333333
+    },
+    "last": {
+      "year": 2024,
+      "rate": 15855.4482866711
+    }
+  },
+  "JPY": {
+    "sourceCountry": "JPN",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 360.000000359
+    },
+    "last": {
+      "year": 2024,
+      "rate": 151.366291302752
+    }
+  },
+  "CNY": {
+    "sourceCountry": "CHN",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 2.46180889882528
+    },
+    "last": {
+      "year": 2024,
+      "rate": 7.19749110789916
+    }
+  },
+  "CAD": {
+    "sourceCountry": "CAN",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 0.969766786666666
+    },
+    "last": {
+      "year": 2024,
+      "rate": 1.36935976604091
+    }
+  },
+  "AUD": {
+    "sourceCountry": "AUS",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 0.892856999892857
+    },
+    "last": {
+      "year": 2024,
+      "rate": 1.51535803855596
+    }
+  },
+  "RUB": {
+    "sourceCountry": "RUS",
+    "count": 30,
+    "first": {
+      "year": 1993,
+      "rate": 0.991666666666667
+    },
+    "last": {
+      "year": 2024,
+      "rate": 92.5524
+    }
+  },
+  "TRY": {
+    "sourceCountry": "TUR",
+    "count": 65,
+    "first": {
+      "year": 1960,
+      "rate": 0.00000901691666658333
+    },
+    "last": {
+      "year": 2024,
+      "rate": 32.8058614432703
+    }
+  }
+}
